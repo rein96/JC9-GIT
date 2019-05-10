@@ -18,14 +18,58 @@
         git init
         git status
         git add index.html
-        git commit -m "Telah menambahkan index.html"
+        git commit -m "Telah menambahkan index.html"    //cara lebih gampang -m => message
 
-        git checkout (untuk checkpoint)
+        git checkout    //untuk checkpoint
         
         git log
-        git log --online (hanya kode commit dan komentar (simplified))
+        git log --online    //hanya kode commit dan komentar (simplified)
 
         git checkout <commit_id>    //checkout
+        git checkout master     //Mengembalikan ke master(latest)
+
+
+
+        //////////////////////////////////////////////
+        //Revert commit
+
+        Mau membatalkan salah satu commit, tapi masih tersimpan di "log"
+
+        git revert <commit_id>
+        ketika git checkout master => commit yang udah di revert jadi ilang, tapi bisa ke master
+
+        /////////////////////////////////////////
+        //Reset commit
+
+        git reset <commit_id>       //ilangin commit, tapi code nya still stay
+
+        git push origin master      //Upload ke github
+        git push            //upload ke github
+        git pull            //herunterladen aus github
+        git clone
+
+
+        wichtig fur test
+        git init
+        git add
+        git commit
+        git push
+
+
+        …or create a new repository on the command line
+echo "# JC9-GIT" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/rein96/JC9-GIT.git
+git push -u origin master
+
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/rein96/JC9-GIT.git
+git push -u origin master
+
         
 
 
